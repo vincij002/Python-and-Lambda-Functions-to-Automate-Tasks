@@ -31,6 +31,7 @@ def lambda_handler(event, context):
             s3_client.copy_object(Bucket=bucket_name, CopySource=bucket_name + "/" + object_name, Key=directory_name + object_name)
             s3_client.delete_object(Bucket=bucket_name, Key=object_name)
 
+            
 
 
 
